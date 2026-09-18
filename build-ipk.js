@@ -6,7 +6,8 @@ const zlib = require('zlib');
 
 const ROOT = __dirname;
 const PKG = path.join(ROOT, 'luci-app-qwdtt');
-const OUT = path.join(ROOT, 'luci-app-qwdtt_1.0.0-1_all.ipk');
+const VERSION = process.env.PKG_VERSION || '1.0.0-1';
+const OUT = path.join(ROOT, 'luci-app-qwdtt_' + VERSION + '_all.ipk');
 
 /* ---------- sfh_hash (SuperFastHash, matches OpenWrt lmo) ---------- */
 
@@ -246,7 +247,7 @@ function buildIpk() {
 
 	const controlText =
 		'Package: luci-app-qwdtt\n' +
-		'Version: 1.0.0-1\n' +
+		'Version: ' + VERSION + '\n' +
 		'Depends: libc, luci-base\n' +
 		'Source: feeds/luci/applications/luci-app-qwdtt\n' +
 		'SourceName: luci-app-qwdtt\n' +

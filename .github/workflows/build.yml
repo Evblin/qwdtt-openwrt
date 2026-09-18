@@ -2,7 +2,18 @@ name: OpenWrt RAW client
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release tag, e.g. v1.0.4'
+        required: true
+        default: 'v1.0.4'
+      build_only:
+        description: 'Only build, skip release'
+        type: boolean
+        default: false
   push:
+    tags:
+      - 'v*'
 
 permissions:
   contents: read
@@ -61,7 +72,7 @@ jobs:
   release:
     name: Publish release
     needs: build
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: ${{ (github.event_name == 'workflow_dispatch' && !github.event.inputs.build_only) || startsWith(github.ref, 'refs/tags/v') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -77,9 +88,17 @@ jobs:
           merge-multiple: true
 
       - name: Build LuCI package (ipk)
-        run: node build-ipk.js
+        run: |
+          TAG="${{ github.event.inputs.version }}"
+          if [ -z "$TAG" ]; then TAG="${GITHUB_REF_NAME}"; fi
+          VERSION="${TAG#v}"
+          if [[ "$VERSION" != *-* ]]; then VERSION="${VERSION}-1"; fi
+          PKG_VERSION="$VERSION" node build-ipk.js
 
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "${GITHUB_REF_NAME}" ./*.tar.gz luci-app-qwdtt_*.ipk --repo "$GITHUB_REPOSITORY" --title "qWDTT OpenWrt ${GITHUB_REF_NAME}" --generate-notes
+        run: |
+          TAG="${{ github.event.inputs.version }}"
+          if [ -z "$TAG" ]; then TAG="${GITHUB_REF_NAME}"; fi
+          gh release create "$TAG" ./*.tar.gz luci-app-qwdtt_*.ipk --repo "$GITHUB_REPOSITORY" --title "qWDTT OpenWrt ${TAG}" --generate-notes
