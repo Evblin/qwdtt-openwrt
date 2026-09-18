@@ -1,0 +1,483 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-qwdtt\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "account"
+msgstr ""
+
+msgid "Account mode supports at most %d workers"
+msgstr ""
+
+msgid "Actions"
+msgstr ""
+
+msgid "Add VK hash"
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "An error occurred:"
+msgstr ""
+
+msgid "anonymous"
+msgstr ""
+
+msgid "Anonymous mode requires a worker count divisible by %d"
+msgstr ""
+
+msgid "Anonymous mode uses public call links; account mode uses your VK credentials."
+msgstr ""
+
+msgid "Anonymous mode: 9, 18, ... 108. Account mode: 1 to 4."
+msgstr ""
+
+msgid "Anonymous VK path"
+msgstr ""
+
+msgid "At least one VK hash is required"
+msgstr ""
+
+msgid "audio"
+msgstr ""
+
+msgid "auto"
+msgstr ""
+
+msgid "Autostart"
+msgstr ""
+
+msgid "Autostart setting updated"
+msgstr ""
+
+msgid "Autostart: off"
+msgstr ""
+
+msgid "Autostart: on"
+msgstr ""
+
+msgid "Cannot start: the service is disabled. Enable autostart first."
+msgstr ""
+
+msgid "Captcha mode"
+msgstr ""
+
+msgid "Check VK hashes"
+msgstr ""
+
+msgid "Checking hashes…"
+msgstr ""
+
+msgid "Config file"
+msgstr ""
+
+msgid "Configuration file:"
+msgstr ""
+
+msgid "Configuration is empty"
+msgstr ""
+
+msgid "Configuration saved. Restart the service to apply the changes."
+msgstr ""
+
+msgid "Configuration was not saved: validation failed."
+msgstr ""
+
+msgid "Connect to the TURN relay over TCP instead of UDP."
+msgstr ""
+
+msgid "Connection"
+msgstr ""
+
+msgid "Connection password"
+msgstr ""
+
+msgid "Connection password is required"
+msgstr ""
+
+msgid "Copy diagnostic report"
+msgstr ""
+
+msgid "Creates a temporary TUN interface to verify that the RAW TUN mode can start. Stop the service before running this test."
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Device"
+msgstr ""
+
+msgid "Device ID"
+msgstr ""
+
+msgid "Device ID is unusually long"
+msgstr ""
+
+msgid "Diagnostics"
+msgstr ""
+
+msgid "Direct mode: RTP-obfuscation AEAD without DTLS (server must listen in direct mode)."
+msgstr ""
+
+msgid "Disable DTLS"
+msgstr ""
+
+msgid "DNS for VK"
+msgstr ""
+
+msgid "Download rate"
+msgstr ""
+
+msgid "Duplicate VK hash: %s"
+msgstr ""
+
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+msgid "Example: 203.0.113.10:56003. Ports: DTLS 56000, direct 56002, raw TUN 56003."
+msgstr ""
+
+msgid "Hash"
+msgstr ""
+
+msgid "Hide"
+msgstr ""
+
+msgid "How the client solves VK captchas."
+msgstr ""
+
+msgid "Identifier reported to the server. Defaults to “openwrt” when empty."
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "Imported profile: %s"
+msgstr ""
+
+msgid "Interface"
+msgstr ""
+
+msgid "Invalid LAN interface name: %s"
+msgstr ""
+
+msgid "Invalid TUN interface name: %s"
+msgstr ""
+
+msgid "LAN interface"
+msgstr ""
+
+msgid "LAN interface whose traffic is routed through the tunnel."
+msgstr ""
+
+msgid "Last updated"
+msgstr ""
+
+msgid "legacy"
+msgstr ""
+
+msgid "Load log"
+msgstr ""
+
+msgid "Loading log…"
+msgstr ""
+
+msgid "Loading status…"
+msgstr ""
+
+msgid "n/a"
+msgstr ""
+
+msgid "Name of the RAW TUN interface created on this router."
+msgstr ""
+
+msgid "Network"
+msgstr ""
+
+msgid "No qWDTT entries in the system log. The client may write to its own log or file; verify via: logread | grep -i qwdtt."
+msgstr ""
+
+msgid "No results. Make sure the client is installed and hashes are configured."
+msgstr ""
+
+msgid "no_dtls must be a boolean value"
+msgstr ""
+
+msgid "not configured"
+msgstr ""
+
+msgid "Number of lines"
+msgstr ""
+
+msgid "Obfuscation"
+msgstr ""
+
+msgid "One hash per entry. The server selects a working call automatically."
+msgstr ""
+
+msgid "Open Diagnostics"
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid "Paste a qWDTT profile link (qwdtt://config), JSON or base64 copied from the Android app."
+msgstr ""
+
+msgid "Please fix the following problems:"
+msgstr ""
+
+msgid "Please wait…"
+msgstr ""
+
+msgid "Policy rules"
+msgstr ""
+
+msgid "Preset name, custom:<IP> or doh:<URL>."
+msgstr ""
+
+msgid "Profile link or JSON"
+msgstr ""
+
+msgid "Queries VK for each configured hash and reports which calls are usable. This can take up to 90 seconds per hash."
+msgstr ""
+
+msgid "Quick import"
+msgstr ""
+
+msgid "qWDTT"
+msgstr ""
+
+msgid "qWDTT diagnostic report"
+msgstr ""
+
+msgid "RAW TUN self-test"
+msgstr ""
+
+msgid "received / sent"
+msgstr ""
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Report copied to clipboard."
+msgstr ""
+
+msgid "Restart"
+msgstr ""
+
+msgid "Restarting the service…"
+msgstr ""
+
+msgid "Review the filled fields and press “Save & Restart”."
+msgstr ""
+
+msgid "rjs"
+msgstr ""
+
+msgid "Routes via tunnel"
+msgstr ""
+
+msgid "Run self-test"
+msgstr ""
+
+msgid "Running"
+msgstr ""
+
+msgid "Running self-test…"
+msgstr ""
+
+msgid "Save & Restart"
+msgstr ""
+
+msgid "Saved. The service is disabled, so it was not started."
+msgstr ""
+
+msgid "Server"
+msgstr ""
+
+msgid "Server address (host:port)"
+msgstr ""
+
+msgid "Server address (peer) is required"
+msgstr ""
+
+msgid "Server address must look like host:port with a valid port"
+msgstr ""
+
+msgid "Service"
+msgstr ""
+
+msgid "Service log"
+msgstr ""
+
+msgid "Service restarted."
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Show"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Start the service and then load the log again."
+msgstr ""
+
+msgid "Starting the service…"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Status is not loaded yet."
+msgstr ""
+
+msgid "Stop"
+msgstr ""
+
+msgid "Stop the service before running the self-test."
+msgstr ""
+
+msgid "Stopped"
+msgstr ""
+
+msgid "Stopping the service…"
+msgstr ""
+
+msgid "The client failed (exit code %d):"
+msgstr ""
+
+msgid "The client produced no output."
+msgstr ""
+
+msgid "The client reads this file only at startup. Use “Save & Restart” to apply changes immediately."
+msgstr ""
+
+msgid "The imported payload contains no password; fill it in manually."
+msgstr ""
+
+msgid "The service is disabled. Enable autostart above, then press Start."
+msgstr ""
+
+msgid "The service is not running. Check the configuration on the Settings page."
+msgstr ""
+
+msgid "The service is running, but the tunnel is not up: the TUN interface has no address yet. Check the service log and the Settings page."
+msgstr ""
+
+msgid "The service is up and forwarding traffic."
+msgstr ""
+
+msgid "Traffic"
+msgstr ""
+
+msgid "Traffic received"
+msgstr ""
+
+msgid "Traffic sent"
+msgstr ""
+
+msgid "TUN address"
+msgstr ""
+
+msgid "TUN interface"
+msgstr ""
+
+msgid "Tunnel"
+msgstr ""
+
+msgid "Tunnel IPv4 address"
+msgstr ""
+
+msgid "Tunnel IPv4 address, e.g. 10.70.0.2"
+msgstr ""
+
+msgid "TURN over TCP"
+msgstr ""
+
+msgid "turn_tcp must be a boolean value"
+msgstr ""
+
+msgid "Unable to copy the report automatically."
+msgstr ""
+
+msgid "Unable to import: no valid qWDTT profile link, JSON file or base64 payload was recognized."
+msgstr ""
+
+msgid "Unable to load qWDTT status:"
+msgstr ""
+
+msgid "Unable to read the configuration:"
+msgstr ""
+
+msgid "Unable to save the configuration:"
+msgstr ""
+
+msgid "Unknown anonymous VK path: %s"
+msgstr ""
+
+msgid "Unknown captcha mode: %s"
+msgstr ""
+
+msgid "Unknown DNS setting: %s"
+msgstr ""
+
+msgid "Unknown obfuscation mode: %s"
+msgstr ""
+
+msgid "Unknown VK auth mode: %s"
+msgstr ""
+
+msgid "Upload rate"
+msgstr ""
+
+msgid "Used only in anonymous mode."
+msgstr ""
+
+msgid "Used to derive the WRAP key; must match the server password."
+msgstr ""
+
+msgid "video"
+msgstr ""
+
+msgid "VK and workers"
+msgstr ""
+
+msgid "VK authorization"
+msgstr ""
+
+msgid "VK call hashes"
+msgstr ""
+
+msgid "VK hash check"
+msgstr ""
+
+msgid "VK hashes"
+msgstr ""
+
+msgid "VK hashes must not contain empty entries"
+msgstr ""
+
+msgid "vkcalls"
+msgstr ""
+
+msgid "Worker count may not exceed %d"
+msgstr ""
+
+msgid "Worker count must be a positive integer"
+msgstr ""
+
+msgid "Workers"
+msgstr ""
+
+msgid "wv (WebView)"
+msgstr ""
+

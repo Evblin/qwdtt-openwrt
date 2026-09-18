@@ -1,0 +1,33 @@
+{
+	"luci-app-qwdtt": {
+		"description": "Grant access to the qWDTT client management pages",
+		"read": {
+			"ubus": {
+				"file": [ "exec", "read", "stat" ],
+				"log": [ "read" ],
+				"rc": [ "init", "list" ],
+				"service": [ "list", "get_state" ]
+			},
+			"uci": [ "qwdtt" ],
+			"file": {
+				"/etc/qwdtt/*": [ "read" ],
+				"/proc/net/dev": [ "read" ],
+				"/sbin/ip -4 -o addr show dev *": [ "exec" ],
+				"/sbin/ip -4 route show table *": [ "exec" ],
+				"/sbin/ip -4 rule show": [ "exec" ],
+				"/usr/bin/qwdtt-client -config * -check-hashes": [ "exec" ],
+				"/usr/bin/qwdtt-client -config * -rawtun-self-test *": [ "exec" ]
+			}
+		},
+		"write": {
+			"ubus": {
+				"file": [ "exec", "write" ],
+				"rc": [ "init" ]
+			},
+			"uci": [ "qwdtt" ],
+			"file": {
+				"/etc/qwdtt/*": [ "write" ]
+			}
+		}
+	}
+}

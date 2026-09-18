@@ -96,3 +96,57 @@ ip route show table 51820
 | `mipsel` | старые MIPS little-endian роутеры |
 
 Перед скачиванием можно проверить архитектуру командой `uname -m`.
+
+## Веб-интерфейс (LuCI)
+
+В этом репозитории также есть пакет `luci-app-qwdtt` — русскоязычный
+интерфейс LuCI для управления клиентом: состояние и управление службой,
+настройки подключения и диагностика.
+
+Пакет выпускается в виде готового `.ipk` в разделе
+[Releases](../../releases/latest) (артефакт
+`luci-app-qwdtt_1.0.0-1_all.ipk`). Установите его после клиента:
+
+```sh
+opkg install luci-app-qwdtt_1.0.0-1_all.ipk
+```
+
+На OpenWrt с `apk`:
+
+```sh
+apk add --allow-untrusted luci-app-qwdtt_1.0.0-1_all.ipk
+```
+
+После установки раздел **qWDTT** появится в LuCI в меню *Службы*
+(Обзор / Настройки / Диагностика). Для полного доступа вернитесь на страницу
+входа в LuCI.
+
+Пользовательский пакет зависит от установленного клиента (`qwdtt`).
+
+### Сборка пакета LuCI из исходников
+
+Структура пакета стандартная для LuCI (`htdocs`, `root`, `po`, `Makefile`
+с `include ../../luci.mk`). Для сборки через OpenWrt:
+
+1. Скопируйте каталог `luci-app-qwdtt` в `feeds/luci/applications/`:
+   ```sh
+   cp -r luci-app-qwdtt feeds/luci/applications/
+   ```
+2. Или подключите этот репозиторий как фид и соберите пакет через
+   `$(TOPDIR)/feeds/luci/luci.mk`.
+3. Затем обычная сборка OpenWrt (например, через SDK):
+   ```sh
+   ./scripts/feeds update -a
+   ./scripts/feeds install luci-app-qwdtt
+   make package/luci-app-qwdtt/compile
+   ```
+
+### Сборка ipk-артефакта
+
+Артефакт `luci-app-qwdtt_1.0.0-1_all.ipk` собирается на GitHub Actions
+(`node build-ipk.js`) и прикрепляется к каждому релизу вместе с архивами
+клиента. Вручную собрать можно так:
+
+```sh
+node build-ipk.js
+```

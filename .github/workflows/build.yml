@@ -67,13 +67,19 @@ jobs:
       contents: write
 
     steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
       - name: Download archives
         uses: actions/download-artifact@v4
         with:
           pattern: qwdtt-openwrt-*
           merge-multiple: true
 
+      - name: Build LuCI package (ipk)
+        run: node build-ipk.js
+
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "${GITHUB_REF_NAME}" ./*.tar.gz --repo "$GITHUB_REPOSITORY" --title "qWDTT OpenWrt ${GITHUB_REF_NAME}" --generate-notes
+        run: gh release create "${GITHUB_REF_NAME}" ./*.tar.gz luci-app-qwdtt_*.ipk --repo "$GITHUB_REPOSITORY" --title "qWDTT OpenWrt ${GITHUB_REF_NAME}" --generate-notes

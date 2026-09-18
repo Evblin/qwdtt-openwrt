@@ -1,0 +1,485 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-qwdtt\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "account"
+msgstr "аккаунт"
+
+msgid "Account mode supports at most %d workers"
+msgstr "Режим аккаунта поддерживает не более %d воркеров"
+
+msgid "Actions"
+msgstr "Действия"
+
+msgid "Add VK hash"
+msgstr "Добавить VK-хеш"
+
+msgid "Advanced"
+msgstr "Дополнительно"
+
+msgid "An error occurred:"
+msgstr "Произошла ошибка:"
+
+msgid "anonymous"
+msgstr "анонимный"
+
+msgid "Anonymous mode requires a worker count divisible by %d"
+msgstr "Анонимный режим требует количество воркеров, кратное %d"
+
+msgid "Anonymous mode uses public call links; account mode uses your VK credentials."
+msgstr "Анонимный режим использует публичные ссылки на звонки; режим аккаунта использует ваши учётные данные VK."
+
+msgid "Anonymous mode: 9, 18, ... 108. Account mode: 1 to 4."
+msgstr "Анонимный режим: 9, 18, ... 108. Режим аккаунта: от 1 до 4."
+
+msgid "Anonymous VK path"
+msgstr "Анонимный путь VK"
+
+msgid "At least one VK hash is required"
+msgstr "Требуется хотя бы один VK-хеш"
+
+msgid "audio"
+msgstr "audio"
+
+msgid "auto"
+msgstr "авто"
+
+msgid "Autostart"
+msgstr "Автозапуск"
+
+msgid "Autostart setting updated"
+msgstr "Настройка автозапуска обновлена"
+
+msgid "Autostart: off"
+msgstr "Автозапуск: выкл."
+
+msgid "Autostart: on"
+msgstr "Автозапуск: вкл."
+
+msgid "Cannot start: the service is disabled. Enable autostart first."
+msgstr "Невозможно запустить: служба отключена. Сначала включите автозапуск."
+
+msgid "Captcha mode"
+msgstr "Режим капчи"
+
+msgid "Check VK hashes"
+msgstr "Проверить VK-хеши"
+
+msgid "Checking hashes…"
+msgstr "Проверка хешей…"
+
+msgid "Config file"
+msgstr "Файл конфигурации"
+
+msgid "Configuration file:"
+msgstr "Файл конфигурации:"
+
+msgid "Configuration is empty"
+msgstr "Конфигурация пуста"
+
+msgid "Configuration saved. Restart the service to apply the changes."
+msgstr "Конфигурация сохранена. Перезапустите службу, чтобы применить изменения."
+
+msgid "Configuration was not saved: validation failed."
+msgstr "Конфигурация не сохранена: проверка не пройдена."
+
+msgid "Connect to the TURN relay over TCP instead of UDP."
+msgstr "Подключаться к TURN-ретранслятору по TCP вместо UDP."
+
+msgid "Connection"
+msgstr "Подключение"
+
+msgid "Connection password"
+msgstr "Пароль подключения"
+
+msgid "Connection password is required"
+msgstr "Укажите пароль подключения"
+
+msgid "Copy diagnostic report"
+msgstr "Скопировать диагностический отчёт"
+
+msgid "Creates a temporary TUN interface to verify that the RAW TUN mode can start. Stop the service before running this test."
+msgstr "Создаёт временный TUN-интерфейс для проверки запуска режима RAW TUN. Перед запуском теста остановите службу."
+
+msgid "Details"
+msgstr "Подробности"
+
+msgid "Device"
+msgstr "Устройство"
+
+msgid "Device ID"
+msgstr "ID устройства"
+
+msgid "Device ID is unusually long"
+msgstr "ID устройства необычно длинный"
+
+msgid "Diagnostics"
+msgstr "Диагностика"
+
+msgid "Direct mode: RTP-obfuscation AEAD without DTLS (server must listen in direct mode)."
+msgstr "Прямой режим: RTP-обфускация AEAD без DTLS (сервер должен работать в прямом режиме)."
+
+msgid "Disable DTLS"
+msgstr "Отключить DTLS"
+
+msgid "DNS for VK"
+msgstr "DNS для VK"
+
+msgid "Download rate"
+msgstr "Скорость приёма"
+
+msgid "Duplicate VK hash: %s"
+msgstr "Дублирующийся VK-хеш: %s"
+
+msgid "Enter a valid IPv4 address."
+msgstr "Введите корректный IPv4-адрес."
+
+msgid "Example: 203.0.113.10:56003. Ports: DTLS 56000, direct 56002, raw TUN 56003."
+msgstr "Пример: 203.0.113.10:56003. Порты: DTLS 56000, direct 56002, raw TUN 56003."
+
+msgid "Hash"
+msgstr "Хеш"
+
+msgid "Hide"
+msgstr "Скрыть"
+
+msgid "How the client solves VK captchas."
+msgstr "Как клиент решает капчи VK."
+
+msgid "Identifier reported to the server. Defaults to “openwrt” when empty."
+msgstr "Идентификатор, сообщаемый серверу. Если пусто, используется «openwrt»."
+
+msgid "Import"
+msgstr "Импорт"
+
+msgid "Imported profile: %s"
+msgstr "Импортирован профиль: %s"
+
+msgid "Interface"
+msgstr "Интерфейс"
+
+msgid "Invalid LAN interface name: %s"
+msgstr "Недопустимое имя LAN-интерфейса: %s"
+
+msgid "Invalid TUN interface name: %s"
+msgstr "Недопустимое имя TUN-интерфейса: %s"
+
+msgid "LAN interface"
+msgstr "LAN-интерфейс"
+
+msgid "LAN interface whose traffic is routed through the tunnel."
+msgstr "LAN-интерфейс, трафик которого направляется через туннель."
+
+msgid "Last updated"
+msgstr "Обновлено"
+
+msgid "legacy"
+msgstr "legacy"
+
+msgid "Load log"
+msgstr "Загрузить журнал"
+
+msgid "Loading log…"
+msgstr "Загрузка журнала…"
+
+msgid "Loading status…"
+msgstr "Загрузка состояния…"
+
+msgid "n/a"
+msgstr "н/д"
+
+msgid "Name of the RAW TUN interface created on this router."
+msgstr "Имя RAW TUN-интерфейса, создаваемого на этом роутере."
+
+msgid "Network"
+msgstr "Сеть"
+
+msgid "No qWDTT entries in the system log. The client may write to its own log or file; verify via: logread | grep -i qwdtt."
+msgstr "В системном журнале нет записей qWDTT. Клиент может писать в свой лог или файл; проверьте: logread | grep -i qwdtt."
+
+msgid "No results. Make sure the client is installed and hashes are configured."
+msgstr "Нет результатов. Убедитесь, что клиент установлен и хеши настроены."
+
+msgid "no_dtls must be a boolean value"
+msgstr "Значение no_dtls должно быть логическим"
+
+msgid "not configured"
+msgstr "не настроено"
+
+msgid "Number of lines"
+msgstr "Количество строк"
+
+msgid "Obfuscation"
+msgstr "Обфускация"
+
+msgid "One hash per entry. The server selects a working call automatically."
+msgstr "По одному хешу на строку. Сервер автоматически выбирает рабочий звонок."
+
+msgid "Open Diagnostics"
+msgstr "Открыть диагностику"
+
+msgid "Overview"
+msgstr "Обзор"
+
+msgid "Paste a qWDTT profile link (qwdtt://config), JSON or base64 copied from the Android app."
+msgstr "Вставьте ссылку профиля qWDTT (qwdtt://config), JSON или base64, скопированные из Android-приложения."
+
+msgid "Please fix the following problems:"
+msgstr "Исправьте следующие проблемы:"
+
+msgid "Please wait…"
+msgstr "Пожалуйста, подождите…"
+
+msgid "Policy rules"
+msgstr "Правила маршрутизации"
+
+msgid "Preset name, custom:<IP> or doh:<URL>."
+msgstr "Имя пресета, custom:<IP> или doh:<URL>."
+
+msgid "Profile link or JSON"
+msgstr "Ссылка профиля или JSON"
+
+msgid "Queries VK for each configured hash and reports which calls are usable. This can take up to 90 seconds per hash."
+msgstr "Запрашивает у VK информацию по каждому хешу и сообщает, какие звонки пригодны. Это может занимать до 90 секунд на хеш."
+
+msgid "Quick import"
+msgstr "Быстрый импорт"
+
+msgid "qWDTT"
+msgstr "qWDTT"
+
+msgid "qWDTT diagnostic report"
+msgstr "Диагностический отчёт qWDTT"
+
+msgid "RAW TUN self-test"
+msgstr "Самотест RAW TUN"
+
+msgid "received / sent"
+msgstr "принято / отправлено"
+
+msgid "Refresh"
+msgstr "Обновить"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Report copied to clipboard."
+msgstr "Отчёт скопирован в буфер обмена."
+
+msgid "Restart"
+msgstr "Перезапустить"
+
+msgid "Restarting the service…"
+msgstr "Перезапуск службы…"
+
+msgid "Review the filled fields and press “Save & Restart”."
+msgstr "Проверьте заполненные поля и нажмите «Сохранить и перезапустить»."
+
+msgid "rjs"
+msgstr "rjs"
+
+msgid "Routes via tunnel"
+msgstr "Маршруты через туннель"
+
+msgid "Run self-test"
+msgstr "Запустить самотест"
+
+msgid "Running"
+msgstr "Работает"
+
+msgid "Running self-test…"
+msgstr "Выполняется самотест…"
+
+msgid "Save & Restart"
+msgstr "Сохранить и перезапустить"
+
+msgid "Saved. The service is disabled, so it was not started."
+msgstr "Сохранено. Служба отключена, поэтому она не была запущена."
+
+msgid "Server"
+msgstr "Сервер"
+
+msgid "Server address (host:port)"
+msgstr "Адрес сервера (host:порт)"
+
+msgid "Server address (peer) is required"
+msgstr "Укажите адрес сервера (peer)"
+
+msgid "Server address must look like host:port with a valid port"
+msgstr "Адрес сервера должен иметь вид host:порт с корректным портом"
+
+msgid "Service"
+msgstr "Служба"
+
+msgid "Service log"
+msgstr "Журнал службы"
+
+msgid "Service restarted."
+msgstr "Служба перезапущена."
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Show"
+msgstr "Показать"
+
+msgid "Start"
+msgstr "Запустить"
+
+msgid "Start the service and then load the log again."
+msgstr "Запустите службу и снова загрузите журнал."
+
+msgid "Starting the service…"
+msgstr "Запуск службы…"
+
+msgid "Status"
+msgstr "Состояние"
+
+msgid "Status is not loaded yet."
+msgstr "Состояние ещё не загружено."
+
+msgid "Stop"
+msgstr "Остановить"
+
+msgid "Stop the service before running the self-test."
+msgstr "Перед запуском самотеста остановите службу."
+
+msgid "Stopped"
+msgstr "Остановлена"
+
+msgid "Stopping the service…"
+msgstr "Остановка службы…"
+
+msgid "The client failed (exit code %d):"
+msgstr "Клиент завершился с ошибкой (код выхода %d):"
+
+msgid "The client produced no output."
+msgstr "Клиент не выдал никаких данных."
+
+msgid "The client reads this file only at startup. Use “Save & Restart” to apply changes immediately."
+msgstr "Клиент читает этот файл только при запуске. Используйте «Сохранить и перезапустить», чтобы применить изменения сразу."
+
+msgid "The imported payload contains no password; fill it in manually."
+msgstr "В импортированных данных нет пароля; укажите его вручную."
+
+msgid "The service is disabled. Enable autostart above, then press Start."
+msgstr "Служба отключена. Включите автозапуск выше и нажмите «Запустить»."
+
+msgid "The service is not running. Check the configuration on the Settings page."
+msgstr "Служба не запущена. Проверьте конфигурацию на странице настроек."
+
+msgid "The service is running, but the tunnel is not up: the TUN interface has no address yet. Check the service log and the Settings page."
+msgstr "Служба запущена, но туннель не поднят: на TUN-интерфейсе нет адреса. Проверьте журнал службы и страницу настроек."
+
+msgid "The service is up and forwarding traffic."
+msgstr "Служба работает и передаёт трафик."
+
+msgid "Traffic"
+msgstr "Трафик"
+
+msgid "Traffic received"
+msgstr "Принято трафика"
+
+msgid "Traffic sent"
+msgstr "Отправлено трафика"
+
+msgid "TUN address"
+msgstr "Адрес TUN"
+
+msgid "TUN interface"
+msgstr "TUN-интерфейс"
+
+msgid "Tunnel"
+msgstr "Туннель"
+
+msgid "Tunnel IPv4 address"
+msgstr "IPv4-адрес туннеля"
+
+msgid "Tunnel IPv4 address, e.g. 10.70.0.2"
+msgstr "IPv4-адрес туннеля, например 10.70.0.2"
+
+msgid "TURN over TCP"
+msgstr "TURN через TCP"
+
+msgid "turn_tcp must be a boolean value"
+msgstr "Значение turn_tcp должно быть логическим"
+
+msgid "Unable to copy the report automatically."
+msgstr "Не удалось скопировать отчёт автоматически."
+
+msgid "Unable to import: no valid qWDTT profile link, JSON file or base64 payload was recognized."
+msgstr "Не удалось импортировать: не распознана ссылка профиля qWDTT, JSON или base64."
+
+msgid "Unable to load qWDTT status:"
+msgstr "Не удалось загрузить состояние qWDTT:"
+
+msgid "Unable to read the configuration:"
+msgstr "Не удалось прочитать конфигурацию:"
+
+msgid "Unable to save the configuration:"
+msgstr "Не удалось сохранить конфигурацию:"
+
+msgid "Unknown anonymous VK path: %s"
+msgstr "Неизвестный анонимный путь VK: %s"
+
+msgid "Unknown captcha mode: %s"
+msgstr "Неизвестный режим капчи: %s"
+
+msgid "Unknown DNS setting: %s"
+msgstr "Неизвестная настройка DNS: %s"
+
+msgid "Unknown obfuscation mode: %s"
+msgstr "Неизвестный режим обфускации: %s"
+
+msgid "Unknown VK auth mode: %s"
+msgstr "Неизвестный режим авторизации VK: %s"
+
+msgid "Upload rate"
+msgstr "Скорость отправки"
+
+msgid "Used only in anonymous mode."
+msgstr "Используется только в анонимном режиме."
+
+msgid "Used to derive the WRAP key; must match the server password."
+msgstr "Используется для вывода ключа WRAP; должен совпадать с паролем сервера."
+
+msgid "video"
+msgstr "video"
+
+msgid "VK and workers"
+msgstr "VK и воркеры"
+
+msgid "VK authorization"
+msgstr "Авторизация VK"
+
+msgid "VK call hashes"
+msgstr "Хеши VK-звонков"
+
+msgid "VK hash check"
+msgstr "Проверка VK-хешей"
+
+msgid "VK hashes"
+msgstr "VK-хеши"
+
+msgid "VK hashes must not contain empty entries"
+msgstr "VK-хеши не должны содержать пустых строк"
+
+msgid "vkcalls"
+msgstr "vkcalls"
+
+msgid "Worker count may not exceed %d"
+msgstr "Количество воркеров не может превышать %d"
+
+msgid "Worker count must be a positive integer"
+msgstr "Количество воркеров должно быть положительным целым числом"
+
+msgid "Workers"
+msgstr "Воркеры"
+
+msgid "wv (WebView)"
+msgstr "wv (WebView)"
+
