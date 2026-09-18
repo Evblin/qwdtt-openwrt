@@ -104,17 +104,18 @@ ip route show table 51820
 настройки подключения и диагностика.
 
 Пакет выпускается в виде готового `.ipk` в разделе
-[Releases](../../releases/latest) (артефакт
-`luci-app-qwdtt_1.0.0-1_all.ipk`). Установите его после клиента:
+[Releases](../../releases/latest) (артефакт вида
+`luci-app-qwdtt_<версия>-1_all.ipk`, например `luci-app-qwdtt_1.0.4-1_all.ipk`).
+Установите его после клиента:
 
 ```sh
-opkg install luci-app-qwdtt_1.0.0-1_all.ipk
+opkg install luci-app-qwdtt_1.0.4-1_all.ipk
 ```
 
 На OpenWrt с `apk`:
 
 ```sh
-apk add --allow-untrusted luci-app-qwdtt_1.0.0-1_all.ipk
+apk add --allow-untrusted luci-app-qwdtt_1.0.4-1_all.ipk
 ```
 
 После установки раздел **qWDTT** появится в LuCI в меню *Службы*
@@ -143,9 +144,10 @@ apk add --allow-untrusted luci-app-qwdtt_1.0.0-1_all.ipk
 
 ### Сборка ipk-артефакта
 
-Артефакт `luci-app-qwdtt_1.0.0-1_all.ipk` собирается на GitHub Actions
+Артефакт `luci-app-qwdtt_<версия>-1_all.ipk` собирается на GitHub Actions
 (`node build-ipk.js`) и прикрепляется к каждому релизу вместе с архивами
-клиента. Вручную собрать можно так:
+клиента. Версия пакета берётся из тега релиза (без префикса `v`). Вручную
+собрать можно так:
 
 ```sh
 node build-ipk.js
